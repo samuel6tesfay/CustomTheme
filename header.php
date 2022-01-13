@@ -7,17 +7,38 @@
       <!-- Bootstrap CSS -->
 
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title><?php bloginfo('name')?></title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <title><?php bloginfo('name')?></title>
     <?php wp_head() ?>
 </head>
 <body <?php body_class()?>>
 
 <div class="heading">
 
-<header class="site-header">
-    <h1>   <a href="<?php echo home_url()?>"><?php bloginfo('name')?></a> </h1>
-    <h4><?php bloginfo('description')?></h4>
-</header>
+
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="<?php echo home_url()?>" class="logo"> <i class="fas fa-book"></i> <?php bloginfo('name')?> </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+<header>
+
 </div>
 <nav class="navbar navbar-expand-md justify-content-md-center" role="navigation">
   <div class="containe">   
