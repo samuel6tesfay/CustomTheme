@@ -137,3 +137,92 @@ html::-webkit-scrollbar-thumb{
     display: none;
 }
 
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:fixed;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+    padding-top: 50px;
+}
+
+.login-form-container.active{
+    right:0;
+}
+
+.login-form-container form{
+    background:#fff;
+    border:var(--border);
+    width:600px;
+    padding:15px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    margin:10px;
+}
+
+.login-form-container form h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin:7px 0;
+    font-size: 16px;
+    border:var(--border);
+    border-radius: 5px;
+    padding:10px 15px;
+    color:var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    padding:10px 0;
+}
+
+.login-form-container form .checkbox label{
+    font-size: 15px;
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width:100%;
+    margin:15px 0;
+}
+
+.login-form-container form p{
+    padding-top: 8px;
+    color:var(--light-color);
+    font-size: 15px;
+}
+
+.login-form-container form p a{
+    color:var(--green);
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top:35px; right:25px;
+    font-size: 25px;
+    color:var(--black);
+    cursor: pointer;
+}
