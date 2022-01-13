@@ -13,10 +13,6 @@
 </head>
 <body <?php body_class()?>>
 
-<div class="heading">
-
-
-
 <header class="header">
 
     <div class="header-1">
@@ -39,7 +35,6 @@
 
 <header>
 
-</div>
 <nav class="navbar navbar-expand-md justify-content-md-center" role="navigation">
   <div class="containe">   
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
@@ -60,5 +55,24 @@
     </div>
 </nav>
 
+<div class="login-form-container">
 
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
+
+</div>
 
