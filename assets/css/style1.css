@@ -641,6 +641,12 @@ section{
     line-height: 2;
 }
 
+.swiper-wrapper1{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

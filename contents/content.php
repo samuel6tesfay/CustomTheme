@@ -2,7 +2,7 @@
 
             <div class="swiper-slide box">
                 <div class="image">
-                    <!-- <img src="image/blog-1.jpg" alt=""> -->
+                    <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/image/blog-1.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3> 
